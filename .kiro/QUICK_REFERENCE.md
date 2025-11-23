@@ -17,12 +17,12 @@ make kubeapps/kubeapps-apis    # 构建 APIs
 # 测试
 make test                      # 运行 Go 测试
 make test-dashboard            # 运行前端测试
-cd integration && yarn test    # 运行 E2E 测试
+cd integration && bun test    # 运行 E2E 测试
 
 # 代码质量
 make lint                      # 运行所有 linter
 make fmt                       # 格式化 Go 代码
-cd dashboard && yarn lint      # 前端 lint
+cd dashboard && bun lint      # 前端 lint
 ```
 
 ### Docker

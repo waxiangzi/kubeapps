@@ -314,13 +314,13 @@ export function fetchPackages(
 
 ```bash
 # ESLint
-yarn eslint
+bun eslint
 
 # Prettier
-yarn prettier
+bun prettier
 
 # TypeScript 检查
-yarn ts-compile-check
+bun ts-compile-check
 ```
 
 ```json

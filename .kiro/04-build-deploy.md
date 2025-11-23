@@ -25,21 +25,21 @@ make kubeapps/oci-catalog
 cd dashboard
 
 # 安装依赖
-yarn install --frozen-lockfile
+bun install --frozen-lockfile
 
 # 开发模式
-yarn start  # 启动开发服务器 (http://localhost:3000)
+bun start  # 启动开发服务器 (http://localhost:3000)
 
 # 生产构建
-yarn build  # 输出到 build/
+bun build  # 输出到 build/
 
 # 代码检查
-yarn lint
-yarn prettier-check
-yarn ts-compile-check
+bun lint
+bun prettier-check
+bun ts-compile-check
 
 # 测试
-yarn test
+bun test
 
 cd ..
 ```

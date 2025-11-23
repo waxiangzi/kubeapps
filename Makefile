@@ -52,9 +52,9 @@ test-db:
 test-all: test-apprepository-controller test-dashboard
 
 test-dashboard:
-	yarn --cwd dashboard/ install --frozen-lockfile
-	yarn --cwd=dashboard run lint
-	CI=true yarn --cwd dashboard/ run test
+	bun --cwd dashboard/ install --frozen-lockfile
+	bun --cwd=dashboard run lint
+	CI=true bun --cwd dashboard/ run test
 
 test-%:
 	$(GO) test -v $(IMPORT_PATH)/cmd/$*
@@ -73,7 +73,7 @@ lint:
 buf-generate:
 	cd cmd/kubeapps-apis && buf generate
 	cd cmd/oci-catalog && buf generate
-	cd dashboard && yarn prettier
+	cd dashboard && bun prettier
 
 buf-mod-update:
 	buf dep update cmd/kubeapps-apis

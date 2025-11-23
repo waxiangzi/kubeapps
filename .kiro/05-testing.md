@@ -119,16 +119,16 @@ func TestSyncChart(t *testing.T) {
 cd dashboard
 
 # 所有测试
-yarn test
+bun test
 
 # 监听模式
-yarn test --watch
+bun test --watch
 
 # 覆盖率
-yarn test --coverage
+bun test --coverage
 
 # 特定文件
-yarn test Auth.test.ts
+bun test Auth.test.ts
 ```
 
 #### 编写测试
@@ -383,14 +383,14 @@ make deploy-dev
 
 # 运行测试
 cd integration
-yarn install
-yarn test
+bun install
+bun test
 
 # 特定测试
-yarn test tests/main-group-1/01-login.spec.js
+bun test tests/main-group-1/01-login.spec.js
 
 # 调试模式
-yarn test --debug
+bun test --debug
 ```
 
 ## 性能测试
@@ -459,7 +459,7 @@ go tool cover -html=coverage.out -o coverage.html
 
 # TypeScript 覆盖率
 cd dashboard
-yarn test --coverage
+bun test --coverage
 # 报告在 coverage/lcov-report/index.html
 ```
 

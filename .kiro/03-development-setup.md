@@ -42,12 +42,12 @@ nvm use 20.18.0
 # 或使用 brew (macOS)
 brew install node@20
 
-# 安装 Yarn
+# 安装 Bun
 npm install -g yarn
 
 # 验证安装
 node --version  # v20.18.0
-yarn --version  # 1.22.x
+bun --version  # 1.22.x
 ```
 
 ### 3. Rust 开发环境
@@ -172,7 +172,7 @@ go mod tidy
 cd dashboard
 
 # 安装依赖
-yarn install --frozen-lockfile
+bun install --frozen-lockfile
 
 # 返回根目录
 cd ..
@@ -347,7 +347,7 @@ go env GOPATH
 
 # Node
 node --version
-yarn --version
+bun --version
 
 # Rust
 rustc --version
@@ -379,7 +379,7 @@ make test
 
 # 构建 Dashboard
 cd dashboard
-yarn build
+bun build
 cd ..
 
 # 构建 Rust 服务
@@ -406,8 +406,8 @@ go mod download
 # 清理缓存
 cd dashboard
 rm -rf node_modules yarn.lock
-yarn cache clean
-yarn install
+bun cache clean
+bun install
 cd ..
 ```
 
