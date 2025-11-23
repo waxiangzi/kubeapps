@@ -1,9 +1,9 @@
 // Copyright 2025 the Kubeapps contributors.
 // SPDX-License-Identifier: Apache-2.0
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './CustomHome.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./CustomHome.scss";
 
 export const CustomHome: React.FC = () => {
   return (
